@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 import { ElementData } from "../types";
 import { elementsDB } from "../data/elements";
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
 
 export const fetchElementData = async (elementName: string): Promise<ElementData> => {
   // 1. Local Lookup (Fast path & Cache)
