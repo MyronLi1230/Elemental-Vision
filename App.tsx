@@ -68,8 +68,8 @@ const App: React.FC = () => {
             {!hasSearched && (
               <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                 {language === 'zh' 
-                  ? "完全离线数据库。交互式 3D 可视化与深度化学微观宇宙。" 
-                  : "Complete offline database. Interactive 3D visualization and deep insights for the chemical universe."}
+                  ? "完全离线数据库。探索元素的基本信息、历史背景与现代应用。" 
+                  : "Complete offline database. Explore element properties, history, and modern applications."}
               </p>
             )}
           </div>
