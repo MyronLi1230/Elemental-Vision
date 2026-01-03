@@ -50,8 +50,9 @@ export const fetchElementData = async (elementName: string): Promise<ElementData
       If the input "${elementName}" is not a recognized chemical element (real or theoretical), return a JSON object with a field "error" set to true, or just ensure the JSON is invalid so I can catch it, but preferably try to interpret it if it's a valid alias.
     `;
 
+    // Fix: Use gemini-3-flash-preview as recommended for text tasks
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-flash-preview',
       contents: prompt,
       config: {
         responseMimeType: "application/json",
