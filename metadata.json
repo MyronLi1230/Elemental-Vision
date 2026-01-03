@@ -1,0 +1,5 @@
+{
+  "name": "Elemental Vision (Offline)",
+  "description": "An immersive offline educational tool for exploring chemical elements. Features dual-mode 3D atom visualization, interactive physics data, and bilingual support without internet access.",
+  "requestFramePermissions": []
+}
