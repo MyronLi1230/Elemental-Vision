@@ -1,5 +1,5 @@
 {
-  "name": "Elemental Vision (Offline)",
-  "description": "An immersive offline educational tool for exploring chemical elements. Features dual-mode 3D atom visualization, interactive physics data, and bilingual support without internet access.",
+  "name": "Elemental Vision (AI)",
+  "description": "An immersive educational tool for exploring chemical elements. Features dual-mode 3D atom visualization, real-time AI-powered data retrieval for any element, and bilingual support.",
   "requestFramePermissions": []
 }

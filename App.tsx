@@ -21,7 +21,7 @@ const App: React.FC = () => {
       const result = await fetchElementData(term);
       setData(result);
     } catch (err) {
-      setError(language === 'zh' ? "无法分析元素数据，请检查名称。" : "Unable to analyze element data. Please verify the name.");
+      setError(language === 'zh' ? "无法分析元素数据，请检查名称或网络连接。" : "Unable to analyze element data. Please verify the name or connection.");
     } finally {
       setLoading(false);
     }
@@ -62,8 +62,8 @@ const App: React.FC = () => {
             {!hasSearched && (
               <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                 {language === 'zh' 
-                  ? "看见不可见。交互式 3D 可视化与深度化学微观宇宙。" 
-                  : "See the invisible. Interactive 3D visualization and deep insights for the chemical universe."}
+                  ? "由 Gemini AI 驱动。交互式 3D 可视化与深度化学微观宇宙。" 
+                  : "Powered by Gemini AI. Interactive 3D visualization and deep insights for the chemical universe."}
               </p>
             )}
           </div>
@@ -73,7 +73,7 @@ const App: React.FC = () => {
           {/* Quick Suggestions */}
           {!hasSearched && !loading && (
              <div className="mt-12 flex flex-wrap justify-center gap-3 opacity-60">
-               {['Neon', 'Bismuth', 'Gold', 'Uranium'].map((el) => (
+               {['Neon', 'Bismuth', 'Gold', 'Uranium', 'Unobtainium'].map((el) => (
                  <button 
                    key={el}
                    onClick={() => handleSearch(el)}
