@@ -68,8 +68,8 @@ const App: React.FC = () => {
             {!hasSearched && (
               <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
                 {language === 'zh' 
-                  ? "完全离线数据库。探索元素的基本信息、历史背景与现代应用。" 
-                  : "Complete offline database. Explore element properties, history, and modern applications."}
+                  ? "探索元素的基本信息、历史背景与现代应用。" 
+                  : "Explore element properties, history, and modern applications."}
               </p>
             )}
           </div>
@@ -108,7 +108,7 @@ const App: React.FC = () => {
         {/* Footer */}
         {hasSearched && (
             <footer className="mt-12 text-center text-gray-700 text-xs py-6 border-t border-white/5">
-            <p>Elemental Vision © {new Date().getFullYear()} • Offline Mode</p>
+            <p>Elemental Vision © {new Date().getFullYear()} • AI Enhanced</p>
             </footer>
         )}
 
